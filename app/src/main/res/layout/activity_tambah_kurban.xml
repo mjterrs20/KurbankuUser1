@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffe6ff"
     tools:context=".TambahKurban">
 
     <ScrollView
@@ -23,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Ikut Jualan"
+                android:text="Tambah Jualan"
                 android:textColor="@color/hitam"
                 android:textSize="20dp" />
 
@@ -34,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:inputType="text"
-                android:hint="Jenis Pertanian" />
+                android:hint="Jenis Hewan" />
 
             <EditText
                 android:id="@+id/edit_text_file_harga"
@@ -42,22 +43,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:inputType="number"
-                android:hint="Modal Yang Dibutuhkan" />
+                android:hint="Harga/Ekor" />
 
             <EditText
                 android:id="@+id/edit_text_file_daerah"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 android:layout_marginStart="16dp"
                 android:inputType="text"
-                android:hint="Daerah Pertanian" />
+                android:hint="Daerah Peternak" />
             <EditText
                 android:id="@+id/edit_text_file_deskripsi"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 android:layout_marginStart="16dp"
                 android:inputType="text"
-                android:hint="Deskripsi Pertanian" />
+                android:hint="Spesifikasi Hewan" />
 
             <Button
                 android:id="@+id/button_choose_image"

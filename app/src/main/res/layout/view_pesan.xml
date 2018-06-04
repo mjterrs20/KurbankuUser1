@@ -5,28 +5,37 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="10dp"
+    android:background="#ffe6ff"
     android:padding="20dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/view1Nama"/>
+        android:id="@+id/viewJenis"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/view1Noktp"/>
+        android:id="@+id/viewHarga"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/view1Jumlah"/>
+        android:id="@+id/viewName"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/view1Hasil"/>
+        android:id="@+id/viewJumlah"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewNohp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewAlamat"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/view1Norek"/>
+        android:id="@+id/viewNorek"/>
 
 </LinearLayout>

@@ -16,13 +16,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DaftarHewan"
-            android:label="Daftar Hewan"/>
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".Depan" />
-        <activity android:name=".Pesanan" />
-        <activity android:name=".TambahKurban"></activity>
+        <activity
+            android:name=".TambahKurban"
+            android:label="Tambah Kurban">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Depan" />
+        </activity>
+        <activity
+            android:name=".Pesanan"
+            android:label="Pesanan Kurban">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Depan" />
+        </activity>
+        <activity
+            android:name=".DaftarHewan"
+            android:label="Daftar Hewan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Depan" />
+        </activity>
+        <activity android:name=".Konfirmasi"></activity>
     </application>
 
 </manifest>

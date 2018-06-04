@@ -36,10 +36,10 @@ public  class HewanAdapter extends RecyclerView.Adapter<HewanAdapter.HewanViewHo
     @Override
     public void onBindViewHolder(HewanViewHolder holder, int position) {
         Upload uploadCurrent = mUploads.get(position);
-        holder.textViewName.setText("Jenis Pertanian : "+uploadCurrent.getName());
-        holder.textViewHarga.setText("Modal Yang Diperlukan : "+uploadCurrent.getmHarga());
-        holder.textViewDaerah.setText("Daerah Tanam : "+uploadCurrent.getmDaerah());
-        holder.textViewDes.setText("Deskripsi : "+uploadCurrent.getmDes ());
+        holder.textViewName.setText("Jenis Hewan : "+uploadCurrent.getName());
+        holder.textViewHarga.setText("Harga 1 Ekor : "+uploadCurrent.getmHarga());
+        holder.textViewDaerah.setText("Daerah Peternak : "+uploadCurrent.getmDaerah());
+        holder.textViewDes.setText("Spesifikasi : "+uploadCurrent.getmDes ());
         Picasso.with(mContext)
                 .load(uploadCurrent.getImageUrl())
                 .placeholder(R.mipmap.ic_launcher)

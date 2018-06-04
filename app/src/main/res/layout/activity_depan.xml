@@ -5,30 +5,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     android:orientation="vertical"
+    android:background="#ffe6ff"
     tools:context=".Depan">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/dpPesan"
+            android:id="@+id/dp_hewan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lihat Pesanan"/>
+            android:text="DAFTAR HEWAN"/>
         <Button
-            android:id="@+id/dpHewan"
+            android:id="@+id/dp_pesan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lihat Daftar Hewan"/>
+            android:text="DAFTAR PEMESANAN"/>
         <Button
-            android:id="@+id/dpTambah"
+            android:id="@+id/dp_tambah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tambah Kurban"/>
-
+            android:text="TAMBAH HEWAN"/>
+        <Button
+            android:id="@+id/dp_konfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konfirmasi Pembayaran"/>
 
     </LinearLayout>
 

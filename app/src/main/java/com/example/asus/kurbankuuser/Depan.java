@@ -3,6 +3,7 @@ package com.example.asus.kurbankuuser;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -26,35 +27,46 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Depan extends AppCompatActivity {
-    private Button dpPesan,dpHewan,dpTambah;
+    private Button cariHewan,pesanan,tambah,konfirmasi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_depan );
 
-        dpPesan = findViewById ( R.id.dpPesan );
-        dpHewan = findViewById ( R.id.dpHewan );
-        dpTambah = findViewById ( R.id.dpTambah );
+        cariHewan = findViewById(R.id.dp_hewan);
+        pesanan = findViewById(R.id.dp_pesan);
+        tambah = findViewById(R.id.dp_tambah);
+        konfirmasi = findViewById ( R.id.dp_konfirmasi );
 
-        dpPesan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Depan.this, Pesanan.class);
-                startActivity(i);
-            }
-        });
-        dpHewan.setOnClickListener(new View.OnClickListener() {
+
+        cariHewan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Depan.this, DaftarHewan.class);
                 startActivity(i);
             }
         });
-        dpTambah.setOnClickListener(new View.OnClickListener() {
+
+        pesanan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Depan.this, TambahKurban.class);
-                startActivity(i);
+                Intent a = new Intent(Depan.this, Pesanan.class);
+                startActivity(a);
+            }
+        });
+
+        tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent j = new Intent(Depan.this, TambahKurban.class);
+                startActivity(j);
+            }
+        });
+        konfirmasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent j = new Intent(Depan.this, Konfirmasi.class);
+                startActivity(j);
             }
         });
 
